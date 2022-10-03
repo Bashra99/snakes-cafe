@@ -1,3 +1,6 @@
+from re import A
+
+
 print(""" 
 **************************************
 **    Welcome to the Snakes Cafe!   **
@@ -48,9 +51,9 @@ order=input('>')
 while order!='quit':  
     # print(order,'first before looping\n',i)
     if order in items:
-        c=items.index(order)
-        counter[c]+=1
-        print(f'\n\n** {counter[c]} order of {order} have been added to your meal **')    
+        a=items.index(order)
+        counter[a]+=1
+        print(f'\n\n** {counter[a]} order of {order} have been added to your meal **')    
     else: 
         print('Please make sure you type you order correctly as we have in the menu :) ')
     order=input('>')
