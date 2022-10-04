@@ -49,7 +49,6 @@ counter=[0,0,0,0,0,0,0,0,0,0,0,0,0]
 
 order=input('>')
 while order!='quit':  
-    # print(order,'first before looping\n',i)
     if order in items:
         a=items.index(order)
         counter[a]+=1
